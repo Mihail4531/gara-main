@@ -14,7 +14,7 @@
 </head>
 
 <body class= "bg-[url('unsplash.jpg')] bg-cover" x-data="{ openMenu : false }"
-  :class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
+:class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
     @include('components.partials.header')
     @include("web.sections.intro")
     {{$slot}}

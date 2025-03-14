@@ -13,8 +13,8 @@
     </style>
 </head>
 
-<body class=" x-data="{ openMenu : false }"
-  :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "">
+<body class= "bg-[url('unsplash.jpg')] bg-cover" x-data="{ openMenu : false }"
+:class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
   <style>
     [x-cloak] {
       display: none !important;
