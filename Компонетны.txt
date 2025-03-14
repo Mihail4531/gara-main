@@ -1,0 +1,35 @@
+product-list
+
+<div class="container text-center">
+    <div class="row">
+        @foreach ($products as $product)
+        <div class="col">
+            <x-card.product :product="$product" />
+        </div>
+        @endforeach
+    </div>
+</div>
+
+endforeach
+
+card
+
+@props(['product'])
+
+<div class="card" style="width: 18rem;">
+    <img height="230" src="{{ url('store/products/', $product->image) }}" class="card-img-top" alt="{{ $product->name }}"
+        style="object-fit: cover; object-position: center;">
+    <div class="card-body">
+        <h5 class="card-title">{{ $product->name }}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Вес товара: {{ $product->weight }}</li>
+        <li class="list-group-item">Цвет товара: {{ $product->color }}</li>
+        <li class="list-group-item">Материал: {{ $product->material }}</li>
+        <li class="list-group-item">Цена: {{ $product->prise }}</li>
+    </ul>
+    {{-- <div class="card-body">
+        <a href="#" class="card-link">Another link</a>
+    </div> --}}
+</div>
+
