@@ -1,12 +1,16 @@
 @php
     use App\Models\Setting;
-
+    $siteName = Setting::latest()->first()->name;
+    $siteLogo = Setting::latest()->first()->img
 
 @endphp
 <x-container>
 <header class="flex justify-between items-center bg-white drop-shadow-sm py-4 px-8">
-    <!-- Logo -->
-    <a href="/" class="text-lg font-bold">{{$setting->name}}</a>
+
+        <a href="" class=" flex items-center gap-[25px]">
+    <p href="/" class="text-lg font-bold ">{{$siteName}}  </p>
+    <img class="size-[30px]" src="{{ url ( 'storage', $siteLogo) }}" alt="">
+</a>
 
     <!-- Mobile Menu Toggle -->
     <button class="flex md:hidden flex-col items-center align-middle" @click="openMenu = !openMenu"
@@ -22,16 +26,13 @@
 
       <ul class="flex flex-row gap-2">
         <li>
-          <a href="#" class="inline-flex py-2 px-3 bg-slate-200 rounded" aria-current="true">Home</a>
+          <a href="{{route ("page.brand")}}" class="inline-flex py-2 px-3 bg-slate-200 rounded" aria-current="true">Главная</a>
         </li>
         <li>
-          <a href="#" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">About</a>
+          <a href="" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Все товары</a>
         </li>
         <li>
-          <a href="#" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Articles</a>
-        </li>
-        <li>
-          <a href="#" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Contact</a>
+          <a href="#" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Бренды</a>
         </li>
       </ul>
 
@@ -48,16 +49,13 @@
       :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
 
       <li class="border-b border-inherit">
-        <a href="#" class="block p-4" aria-current="true">Home</a>
+        <a href="#" class="block p-4" aria-current="true">Главная</a>
       </li>
       <li class="border-b border-inherit">
-        <a href="#" class="block p-4">About</a>
+        <a href="#" class="block p-4">Все товары</a>
       </li>
       <li class="border-b border-inherit">
-        <a href="#" class="block p-4">Articles</a>
-      </li>
-      <li class="border-b border-inherit">
-        <a href="#" class="block p-4">Contact</a>
+        <a href="#" class="block p-4">Бренды</a>
       </li>
 
     </ul>
