@@ -1,8 +1,8 @@
 
 
 <section  aria-labelledby="intro-title" aria-describedby="intro-description"
-class="w-full h-full  pt-[50px] md:pt-[50px] bg-no-repeat bg-cover  bg-center"
-style="background-image: url({{ asset('storage/6.jpg') }})">
+class="w-full h-full pt-[100px] md:pt-[250px] bg-no-repeat bg-cover  bg-center"
+style="background-image: url({{ asset('storage/11.jfif') }})">
 <x-container>
     <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-3 pb-12 md:pb-[250px]">
         {{-- начало колонки слева --}}

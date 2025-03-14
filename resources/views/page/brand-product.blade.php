@@ -1,6 +1,6 @@
 <x-show>
     <x-container>
-    <div class="flex flex-col items-center gap-2 ">
+    <div class=" justify-center items-center gap-2 flex flex-col md:flex md:flex-col md:items-center md:gap-2 pb-9 ">
         <x-slot:title>{{ $titlePage }}</x-slot:title>
         <h1 class="text-[24px] font-bold" >Это страница записей категории</h1>
         <livewire:product-list :products="$products" />

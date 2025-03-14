@@ -4,7 +4,7 @@
     $siteLogo = Setting::latest()->first()->img
 
 @endphp
-<footer class="bg-black dark:bg-gray-900 pt-[50px]">
+<footer class="bg-black dark:bg-gray-900 pt-[10px] w-ful h-full">
     <x-container>
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">

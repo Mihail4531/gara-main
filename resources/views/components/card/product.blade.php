@@ -1,6 +1,6 @@
 @props(['product'])
 
-<div class="w-full max-w-sm h-[600px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class=" justify-center w-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-5">
     <a href="#">
         <img class="p-3 rounded-t-lg w-full" src="{{ url ( 'storage', $product->image) }}" alt="product image" />
     </a>

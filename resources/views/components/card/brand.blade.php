@@ -1,12 +1,12 @@
 @props(['brand'])
-<div class="max-w-sm bg-white border h-[600px] border-gray-200  rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class=" justify-center  max-w-sm bg-white border p-[10px]  border-gray-200  rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 pb-7">
     <a href="{{ route('brand.showOrBrand', $brand->id) }}" class="">
-        <img class="rounded-t-lg w-full h-[382px] object-cover" src="{{ url ( 'storage', $brand->image) }}" alt="" />
+        <img class=" h-[410px]  rounded-t-lg w-full md:h-[382px] object-cover" src="{{ url ( 'storage', $brand->image) }}" alt="" />
     </a>
     <div class="p-5">
         <div class="">
         <a href="{{ route('brand.showOrBrand', $brand->id) }}">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{$brand->name}}</h5>
+            <h5 class="md:text-[12px] mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{$brand->name}}</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{$brand->description}}</p>
     </div>

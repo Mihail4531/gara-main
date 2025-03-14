@@ -7,8 +7,8 @@
 <x-container>
 <header class="flex justify-between items-center bg-white drop-shadow-sm py-4 px-8">
 
-        <a href="" class=" flex items-center gap-[25px]">
-    <p href="/" class="text-lg font-bold ">{{$siteName}}  </p>
+        <a href="{{route("page.brand")}}" class=" flex items-center gap-[25px]">
+    <p  class="text-lg font-bold ">{{$siteName}}  </p>
     <img class="size-[30px]" src="{{ url ( 'storage', $siteLogo) }}" alt="">
 </a>
 
@@ -29,10 +29,10 @@
           <a href="{{route ("page.brand")}}" class="inline-flex py-2 px-3 bg-slate-200 rounded" aria-current="true">Главная</a>
         </li>
         <li>
-          <a href="" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Все товары</a>
+          <a href="{{route ("product.index")}}" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Все товары</a>
         </li>
         <li>
-          <a href="#" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Бренды</a>
+          <a href="{{route ("page.brand")}}" class="inline-flex py-2 px-3 hover:bg-slate-200 rounded">Бренды</a>
         </li>
       </ul>
 
@@ -55,7 +55,7 @@
         <a href="#" class="block p-4">Все товары</a>
       </li>
       <li class="border-b border-inherit">
-        <a href="#" class="block p-4">Бренды</a>
+        <a href="" class="block p-4">Бренды</a>
       </li>
 
     </ul>
