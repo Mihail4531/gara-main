@@ -17,6 +17,7 @@
 :class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
     @include('components.partials.header')
     @include("web.sections.intro")
+    @include("web.sections.info")
     {{$slot}}
     @include('components.partials.footer')
 </body>
